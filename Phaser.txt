@@ -1,17 +1,19 @@
 var game = new Phaser.Game(800, 600, Phaser.AUTO, '', { preload: preload, create: create, update: update });
 
-function preload() {
+var MainMenu = function(game) {};
+MainMenu.prototype = {
 	var green;
 	var blue;
 	var black;
 	var purple;
-}
-
-function create() {
-	// place your assets
-}
-
-function update() {
-	// run game loop
+	preload: function() {
+		console.log('MainMenu: preload');
+	},
+	create: function() {
+		console.log('MainMenu: create');
+	},
+	update: function() {
+		// main menu logic
+	}
 }
 
